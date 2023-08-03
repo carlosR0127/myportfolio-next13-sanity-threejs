@@ -2,21 +2,22 @@ import { DefaultProviders } from '@/redux/Provider'
 import '../globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/Navbar'
+import { USER_NAME, USER_DOMAIN } from '@/utils/constants'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  metadataBase: new URL('https://david-js.com' || 'localhost:3000'),
+  metadataBase: new URL(USER_DOMAIN || 'localhost:3000'),
   title: {
-    default: "David | Portfolio",
-    template: "%s | david-js.com",
+    default: `${USER_NAME} | Portfolio`,
+    template: "%s | " + USER_DOMAIN,
   },
-  description: "Portfolio and Blog of 'Adi' Muhammad Aziz Abdillah. An Indonesian coder thats understand design",
+  description: `Portfolio and Blog of ${USER_NAME}. Singaporian code expert with good design skill`,
   openGraph: {
-    title: 'david-js.com',
-    description: "Portfolio and Blog of 'Adi' Muhammad Aziz Abdillah. An Indonesian coder thats understand design",
-    url: 'david-js.com',
-    siteName: 'david-js.com',
+    title: USER_DOMAIN,
+    description: `Portfolio and Blog of ${USER_NAME}. Singaporian code expert with good design skill`,
+    url: USER_DOMAIN,
+    siteName: USER_DOMAIN,
     images: [
       {
         url: '/preview-sm.jpg',

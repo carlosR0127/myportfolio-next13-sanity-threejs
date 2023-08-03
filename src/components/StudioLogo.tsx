@@ -9,7 +9,7 @@ const StudioLogo = (props: any) => {
                 className="rounded-full object-cover"
                 height={16}
                 width={16}
-                src="/adi.svg"
+                src="/std_logo.svg"
                 alt="logo"
             />
             {renderDefault && <>{renderDefault(props)}</>}

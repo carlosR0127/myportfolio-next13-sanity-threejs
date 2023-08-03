@@ -7,7 +7,7 @@ import { useSelector,useDispatch } from 'react-redux'
 import { AppDispatch, RootState } from '@/redux/store/store'
 import { toggleDarkMode } from '@/redux/slices/darkModeSlice'
 import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs";
-import { navLinks } from '@/utils/constants'
+import { USER_DOMAIN, USER_NAME, navLinks } from '@/utils/constants'
 import LogoCanvas from './canvas/Logo'
 import { motion } from 'framer-motion'
 const menu = '/assets/menu.svg'
@@ -50,8 +50,11 @@ const Navbar = () => {
             <LogoCanvas/>
           </motion.div>
           <p className={`${darkMode ? 'text-white-100' : 'text-black-100'} text-[18px] font-bold cursor-pointer flex`}>
-            david-js.com &nbsp;
-            {/* <span className='xl:block hidden'> | by David</span> */}
+            {USER_NAME}
+            {/* 
+            {USER_DOMAIN === 'localhost:3000' ? '' : USER_DOMAIN} &nbsp;
+             <span className='xl:block hidden'> | by ${USER_NAME}</span> 
+            */}
           </p>
         </Link>
 

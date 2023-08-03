@@ -6,7 +6,7 @@ import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
 import CanvasLoader from '../Loader'
 
 const BungAdiLogo = () => {
-    const file = useGLTF("./bungadi3d/logo.gltf")
+    const file = useGLTF("./3d/logo.gltf")
     return(
         <mesh castShadow receiveShadow>
             <ambientLight intensity={0.25} />

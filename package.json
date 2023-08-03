@@ -1,8 +1,7 @@
 {
-  "name": "bungadi-kuro-23",
+  "name": "Martin-Jobson-22",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://bungadi.com",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

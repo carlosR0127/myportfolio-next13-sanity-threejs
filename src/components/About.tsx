@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import Image from 'next/image'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/redux/store/store'
-import { services } from '@/utils/constants'
+import { USER_EXPERIENCE, services } from '@/utils/constants'
 import SectionWrapper from '@/hoc/SectionWrapper'
 import { fadeIn, textVariant } from '@/utils/motion'
 
@@ -48,7 +48,7 @@ const About = () => {
             variants={fadeIn("", "", 0.1, 1)}
             className='mt-4 text-[17px] max-w-3xl leading-[30px]'
         >
-            I'm a <span style={{color: '#0695ff', textTransform: 'uppercase'}}>talented fullstack developer</span> with 🏆5+ years of experience in web development
+            I'm a <span style={{color: '#0695ff', textTransform: 'uppercase'}}>talented fullstack developer</span> with 🏆{USER_EXPERIENCE}+ years of experience in web development
             and mobile app development. 
             I am passionate about learning, expanding my knowledge, building high-quality software, and automation.
             I'm a <span style={{color: '#0695ff'}}>proactive</span> and <span style={{color: '#0695ff'}}>honest</span> guy, and 

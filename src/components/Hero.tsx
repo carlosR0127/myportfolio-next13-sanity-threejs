@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/redux/store/store'
 import LaptopCanvas from "./canvas/Laptop"
+import { USER_EXPERIENCE, USER_NAME } from '@/utils/constants'
 
 const Hero = () => {
 
@@ -23,22 +24,22 @@ const Hero = () => {
   
         <div className={`flex flex-col items-center ${darkMode ? 'text-white-100' : 'text-black-100'}`}>
             <h1 className={`font-black lg:text-6xl sm:text-4xl xs:text-3xl text-3xl mt-2`}>
-              Hi, I'm <span className='text-primary'>David</span>
+              Hi, I'm <span className='text-primary'> {USER_NAME} </span>
             </h1>
             <p className={`font-medium lg:text-3xl sm:text-2xl xs:text-xl text-base mt-2`}>
               I am a Senior Full Stack developer. <br className='sm:block hidden' />
-              🏆 5+ years of experience <br className='sm:block hidden' />
+              🏆 {USER_EXPERIENCE}+ years of experience <br className='sm:block hidden' />
               Welcome to my website!
             </p>
             <div className="flex flex-row gap-8 mt-4">
-              {/* <Link href="/project">
+              <Link href="/project">
                 <button
                 className="mb-2 flex flex-row items-center justify-center gap-2 rounded bg-button-gradien px-6 py-2.5 
                 text-xs font-medium uppercase leading-tight text-white shadow-white 
                 transition duration-150 ease-in-out active:bg-primary-800 active:shadow-lg hover:scale-125">
                   <p>My Project</p>
                 </button>
-              </Link> */}
+              </Link>
               {/* <Link href="/blog">
                 <button
                 className={`mb-2 flex flex-row items-center justify-center gap-2 rounded ${darkMode?'bg-black-100':'bg-white-100'} px-6 py-2.5 

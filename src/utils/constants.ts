@@ -16,10 +16,18 @@ const figma = '/assets/tech/figma.png'
 const docker = '/assets/tech/docker.png'
 const kodingnext = '/assets/company/Kodingnext.png'
 const blank = '/assets/company/blank.png'
-const bawp = '/assets/ba-wp.png'
 const baone = '/assets/ba-one.png'
-const tenzies = '/assets/tenzies.png'
 const threejs = '/assets/tech/threejs.svg'
+
+export const USER_NAME = 'Martin';
+export const USER_EXPERIENCE = 6;
+export const USER_DOMAIN = 'localhost:3000';
+
+export const GITHUB_LINK = 'https://github.com/m001108'
+export const LINKEDIN_LINK = 'https://www.linkedin.com/in/m001108'
+export const TWITTER_LINK = 'https://twitter.com/'
+export const FACEBOOK_LINK = 'https://www.facebook.com/m001108';
+export const INSTAGRAM_LINK = 'https://www.instagram.com/rodrigoalis001/';
 
 export const navLinks = [
   // {
@@ -174,6 +182,20 @@ const testimonials = [
   },
 ];
 
+const project1 = '/assets/project/1.png'
+const project2 = '/assets/project/2.png'
+const project3 = '/assets/project/3.png'
+const project4 = '/assets/project/4.png'
+const project5 = '/assets/project/5.png'
+const project6 = '/assets/project/6.png'
+const project7 = '/assets/project/7.jpg'
+const project8 = '/assets/project/8.png'
+const project9 = '/assets/project/9.png'
+const project10 = '/assets/project/10.png'
+const project11 = '/assets/project/11.png'
+const project12 = '/assets/project/12.png'
+const project13 = '/assets/project/13.png'
+
 const projects = [
   {
     name: "Kitchen Visualizer",
@@ -192,31 +214,14 @@ const projects = [
         name: "MongoDB",
         color: "pink-text-gradient",
       },
+      {
+        name: "Responsive Design",
+        color: "violet-text-gradient"
+      }
     ],
-    image: bawp,
+    image: project1,
     source_code_link: "https://www.fabuwood.com/visualizer/",
   },
-  // {
-  //   name: "My first react website",
-  //   description:
-  //     "this is my first react headless wordpress cms that's was ever used in this domain",
-  //   tags: [
-  //     {
-  //       name: "react",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "graphql",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "wordpress",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: baone,
-  //   source_code_link: "https://github.com/Bung-Adi/bungadi-front-end-2022",
-  // },
   {
     name: "Last Supper",
     description:
@@ -235,9 +240,228 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tenzies,
+    image: project2,
     source_code_link: "https://lastsupper.com",
   },
+  {
+    name: "Website for Bairror",
+    description:
+      "Responsible for the front end of the mobile app. Backend by top specialist of Lamoda, Yandex, Sber, CTO is ex-CTO of Lamoda and Delivery Club.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: project3,
+    source_code_link: "https://bairro.pt/en",
+  },
+  {
+    name: "Auto Parts Way",
+    description:
+      "At Auto Parts WAY Canada, it is our goal to provide you discount auto parts and auto accessories fast.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ASP.NET",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "orange-text-gradient"
+      }
+    ],
+    image: project4,
+    source_code_link: "https://www.autopartsway.ca/secure/register.cfm",
+  },
+  {
+    name: "Lever - student loan negotiation app, USA",
+    description:
+      "App uses the programs the Department of Education USA offers to give you federal loan repayment plans that will get you debt free smarter and faster",
+    tags: [
+      {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "pink-text-gradient",
+      }
+    ],
+    image: project5,
+    source_code_link: "https://white-digital.com/lever",
+  },
+  {
+    name: "Online Food ordering App",
+    description:
+      "Fimeal is a Polish online food ordering and delivery platform. The challenging issue was to synchronizing the website and mobile application.",
+    tags: [
+      {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "pink-text-gradient",
+      }
+    ],
+    image: project6,
+    source_code_link: "https://fimeal.com/",
+  },
+  {
+    name: "GPS Bus Tracking System",
+    description:
+      "I have expertise in creating Vehicle management system from scratch using .net and php. Developed a GPS tracker for school bus tracking system.",
+    tags: [
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GPS tracker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Server API",
+        color: "orange-text-gradient",
+      }
+    ],
+    image: project7,
+    source_code_link: "http://ontracksystem.in",
+  },
+  {
+    name: "Website Design and Development",
+    description:
+      "My client hired me to design and develop this website from scratch. I have used the Elementor page builder to complete this website.",
+    tags: [
+      {
+        name: "Elementor Theme",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Responsive Design",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: project8,
+    source_code_link: "https://digitaledgemedia.ca/",
+  },
+  {
+    name: "IDEX Enterprise innovation & project management",
+    description:
+      "It Engage your entire workforce in ideation. Break down barriers in department, language, or geography.",
+    tags: [
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "violet-text-gradient",
+      }
+    ],
+    image: project13,
+    source_code_link: "https://idexinnovation.com/",
+  },
+  {
+    name: "Responsive Website Design for Bapassociates",
+    description:
+      "The client was looking for a new design that better represented their brand and to give them a cleaner more professional online presence.",
+    tags: [
+      {
+        name: "Wordpress",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Responsive Design",
+        color: "orange-text-gradient",
+      }
+    ],
+    image: project9,
+    source_code_link: "https://bapassociates.com/",
+  },
+  {
+    name: "WordPress Divi Website with API and AI Integration",
+    description:
+      "Created a Divi-based website for a Business Consulting company with API and AI Integration.",
+    tags: [
+      {
+        name: "Wordpress",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Responsive Design",
+        color: "orange-text-gradient",
+      }
+    ],
+    image: project10,
+    source_code_link: "https://gznite.com/",
+  },
+  {
+    name: "Travel Blog website on WordPress",
+    description:
+      "I have worked on this website from scratch. My client is a Travelling enthusiastic person so she wanted a website where she can display her travelling blogs.",
+    tags: [
+      {
+        name: "Wordpress",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Google Map",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Responsive Design",
+        color: "orange-text-gradient",
+      }
+    ],
+    image: project11,
+    source_code_link: "https://travelandstyle.ca/",
+  },
+  {
+    name: "Real estate marketing Wordpress website",
+    description:
+      "My client hired my to re-design this website from scratch to end using WordPress. During these days, I've attracted to wordpress development.",
+    tags: [
+      {
+        name: "Wordpress",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Plugins Add-in",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Responsive Design",
+        color: "orange-text-gradient",
+      }
+    ],
+    image: project12,
+    source_code_link: "https://creativeartpartners.com/",
+  }
 ];
 
 export { services, technologies, experiences, testimonials, projects };
