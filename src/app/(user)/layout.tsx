@@ -1,4 +1,4 @@
-import { DefaultProviders } from '@/redux/Provider'
+import { DefaultProviders } from '@/redux/provider'
 import '../globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/Navbar'
