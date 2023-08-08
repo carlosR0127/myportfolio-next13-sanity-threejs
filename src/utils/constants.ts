@@ -195,6 +195,7 @@ const project10 = '/assets/project/10.png'
 const project11 = '/assets/project/11.png'
 const project12 = '/assets/project/12.png'
 const project13 = '/assets/project/13.png'
+const project14 = '/assets/project/14.png'
 
 const projects = [
   {
@@ -263,6 +264,31 @@ const projects = [
     ],
     image: project3,
     source_code_link: "https://bairro.pt/en",
+  },
+  {
+    name: "Tenzies Lottery Game",
+    description:
+      "Roll and dice emulation game by PC. I have made this game to have a fun for me and to contribute to you",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Vite",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Sass",
+        color: "violet-text-gradient",
+      },
+    ],
+    image: project14,
+    source_code_link: "https://tenzien-game-by-adi.netlify.app/",
   },
   {
     name: "Auto Parts Way",
