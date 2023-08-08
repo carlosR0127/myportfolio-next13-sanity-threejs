@@ -5,7 +5,7 @@ import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
 
 import CanvasLoader from '../Loader'
 
-const BungAdiLogo = () => {
+const MyLogo = () => {
     const file = useGLTF("./3d/logo.gltf")
     return(
         <mesh castShadow receiveShadow>
@@ -42,7 +42,7 @@ const LogoCanvas = () => {
                 maxPolarAngle={Math.PI / 2}
                 minPolarAngle={Math.PI / 2}
             />
-            <BungAdiLogo/>
+            <MyLogo/>
             </Suspense>
             <Preload all />
         </Canvas>

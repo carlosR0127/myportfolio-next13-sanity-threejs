@@ -42,10 +42,10 @@ export const navLinks = [
     id: "project",
     title: "Project",
   },
-  // {
-  //   id: "blog",
-  //   title: "Blog",
-  // },
+  {
+    id: "blog",
+    title: "Blog",
+  },
   {
     id: "contact",
     title: "Contact",
@@ -120,10 +120,10 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  // {
-  //   name: "docker",
-  //   icon: docker,
-  // },
+  {
+    name: "docker",
+    icon: docker,
+  },
 ];
 
 const experiences = [
@@ -223,9 +223,9 @@ const projects = [
     source_code_link: "https://www.fabuwood.com/visualizer/",
   },
   {
-    name: "Last Supper",
+    name: "最後の晩餐",
     description:
-      "The users thumb up the food or restaurant they taste or visit so that providing the popularity",
+      "Leonardo da Vinci's 'The Last Supper'. The users thumb up the food or restaurant they taste or visit so that providing the popularity",
     tags: [
       {
         name: "React Native",

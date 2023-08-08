@@ -40,14 +40,14 @@ const Hero = () => {
                   <p>My Project</p>
                 </button>
               </Link>
-              {/* <Link href="/blog">
+              <Link href="/blog">
                 <button
                 className={`mb-2 flex flex-row items-center justify-center gap-2 rounded ${darkMode?'bg-black-100':'bg-white-100'} px-6 py-2.5 
                 text-xs font-medium uppercase leading-tight text-secondary border-2 border-secondary
                 transition duration-150 ease-in-out active:bg-primary-800 active:shadow-lg hover:scale-125`}>
                   <p>Blog</p>
                 </button>
-              </Link> */}
+              </Link>
             </div>
             {/* <div className="mt-4">
               <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1aacd3HOVgNqlob7UJqMYHIKEfghLDEid/view?usp=drive_link" className="cursor-pointer text-primary hover:text-tertiary hover:scale-105">Download My CV</a>
