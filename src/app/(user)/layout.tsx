@@ -7,7 +7,7 @@ import { USER_NAME, USER_DOMAIN } from '@/utils/constants'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  metadataBase: new URL('http://' + USER_DOMAIN || 'localhost:3000'),
+  metadataBase: new URL(USER_DOMAIN || 'localhost:3000'),
   title: {
     default: `${USER_NAME} | Portfolio`,
     template: "%s | " + USER_DOMAIN,
@@ -55,7 +55,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={inter.className}>
+      <body >
         <DefaultProviders>
           <Navbar/>
           {children}

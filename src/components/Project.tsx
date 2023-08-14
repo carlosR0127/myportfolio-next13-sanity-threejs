@@ -24,14 +24,16 @@ const ProjectCard: React.FC<{
     dark: boolean
 }> = ({index,name,description,tags,image,source_code_link,dark}) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div 
+    // variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+    >
       <Tilt
         options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className={`${dark?'bg-black-100':'bg-white-100'} border-2 border-secondary p-5 rounded-2xl sm:w-[360px] w-full`}
+        className={`${dark?'bg-black-100':'bg-white-100'} border-2 border-secondary p-5 rounded-2xl sm:w-[325px] w-full`}
       >
         <div className='relative w-full h-[230px]'>
           <Suspense>
@@ -83,14 +85,16 @@ const Works = () => {
   const {darkMode} = useSelector((state: RootState) => state.darkMode)
   return (
     <div className={`sm:px-16 px-6 mt-8 ${darkMode ? 'text-white-100' : 'text-black-100'}`}>
-        <motion.div variants={textVariant(1)}>
+        <motion.div 
+        // variants={textVariant(1)}
+        >
             <p className="font-medium lg:text-2xl sm:text-xl xs:text-lg text-base mt-2">My work</p>
             <h2 className="font-black lg:text-5xl sm:text-3xl xs:text-2xl text-xl mt-2">Projects.</h2>
         </motion.div>
 
         <div className='w-full flex'>
             <motion.p
-            variants={fadeIn("", "", 0.2, 1.5)}
+            // variants={fadeIn("", "", 0.2, 1.5)}
             className='mt-3 text-[17px] max-w-3xl leading-[30px]'
             >
             Following projects showcases my skills and experience through
