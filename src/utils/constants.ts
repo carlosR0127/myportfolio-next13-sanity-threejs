@@ -21,7 +21,7 @@ const threejs = '/assets/tech/threejs.svg'
 
 export const USER_NAME = 'Martin';
 export const USER_EXPERIENCE = 6;
-export const USER_DOMAIN = 'localhost:3000';
+export const USER_DOMAIN = `localhost:${process.env.PORT}`;
 
 export const GITHUB_LINK = 'https://github.com/m001108'
 export const LINKEDIN_LINK = 'https://www.linkedin.com/in/m001108'
@@ -195,7 +195,7 @@ const project10 = '/assets/project/10.png'
 const project11 = '/assets/project/11.png'
 const project12 = '/assets/project/12.png'
 const project13 = '/assets/project/13.png'
-const project14 = '/assets/project/14.png'
+const project14 = '/assets/project/14.jpg'
 
 const projects = [
   {
@@ -268,7 +268,7 @@ const projects = [
   {
     name: "Tenzies Lottery Game",
     description:
-      "Roll and dice emulation game by PC. I have made this game to have a fun for me and to contribute to you",
+      "Roll and dice emulation game by PC. I have made this game to have a fun for me and to contribute to all of you. Please have a try.",
     tags: [
       {
         name: "React",
@@ -289,27 +289,6 @@ const projects = [
     ],
     image: project14,
     source_code_link: "https://tenzien-game-by-adi.netlify.app/",
-  },
-  {
-    name: "Auto Parts Way",
-    description:
-      "At Auto Parts WAY Canada, it is our goal to provide you discount auto parts and auto accessories fast.",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "ASP.NET",
-        color: "green-text-gradient",
-      },
-      {
-        name: "MongoDB",
-        color: "orange-text-gradient"
-      }
-    ],
-    image: project4,
-    source_code_link: "https://www.autopartsway.ca/secure/register.cfm",
   },
   {
     name: "Lever - student loan negotiation app, USA",
@@ -380,7 +359,7 @@ const projects = [
       "My client hired me to design and develop this website from scratch. I have used the Elementor page builder to complete this website.",
     tags: [
       {
-        name: "Elementor Theme",
+        name: "Elementor",
         color: "pink-text-gradient",
       },
       {
@@ -413,7 +392,7 @@ const projects = [
     source_code_link: "https://idexinnovation.com/",
   },
   {
-    name: "Responsive Website Design for Bapassociates",
+    name: "Responsive Design for Bapassociates",
     description:
       "The client was looking for a new design that better represented their brand and to give them a cleaner more professional online presence.",
     tags: [
@@ -430,7 +409,28 @@ const projects = [
     source_code_link: "https://bapassociates.com/",
   },
   {
-    name: "WordPress Divi Website with API and AI Integration",
+    name: "Auto Parts Way",
+    description:
+      "At Auto Parts WAY Canada, it is our goal to provide you discount auto parts and auto accessories fast. I was responsible for login and register page. This can help make sense of ASP.NET.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ASP.NET",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "orange-text-gradient"
+      }
+    ],
+    image: project4,
+    source_code_link: "https://www.autopartsway.ca/secure/register.cfm",
+  },
+  {
+    name: "WordPress Divi with API and AI Integration",
     description:
       "Created a Divi-based website for a Business Consulting company with API and AI Integration.",
     tags: [
@@ -449,7 +449,7 @@ const projects = [
   {
     name: "Travel Blog website on WordPress",
     description:
-      "I have worked on this website from scratch. My client is a Travelling enthusiastic person so she wanted a website where she can display her travelling blogs.",
+      "I have worked on from scratch. The client is a Travelling enthusiastic person so she wanted a website where she can display her travelling blogs.",
     tags: [
       {
         name: "Wordpress",

@@ -10,14 +10,14 @@ export const metadata = {
   metadataBase: new URL('http://' + USER_DOMAIN || 'localhost:3000'),
   title: {
     default: `${USER_NAME} | Portfolio`,
-    template: "%s | " + USER_DOMAIN,
+    template: "%s | " + USER_NAME,
   },
   description: `Portfolio and Blog of ${USER_NAME}. Singaporian code expert with good design skill`,
   openGraph: {
     title: USER_DOMAIN,
     description: `Portfolio and Blog of ${USER_NAME}. Singaporian code expert with good design skill`,
     url: 'http://' + USER_DOMAIN,
-    siteName: USER_DOMAIN,
+    siteName: 'http://' + USER_DOMAIN,
     images: [
       {
         url: '/preview-sm.jpg',
@@ -55,7 +55,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={inter.className}>
+      <body >
         <DefaultProviders>
           <Navbar/>
           {children}

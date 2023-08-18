@@ -21,7 +21,8 @@ const query = groq`
 
 export default async function BlogRoot() {
     const { isEnabled } = draftMode()
-    const posts = await client.fetch(query)
+    const posts: Post[] = [] //await client.fetch(query)
+    
     if (isEnabled) {
       return (
         // <PreviewSuspense 

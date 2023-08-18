@@ -28,7 +28,8 @@ const BlogList = ({posts}: Props) => {
                     <div className='sm:mt-16 mt-8 flex'>
                         <hr className="bg-primary h-1 mb-10"/>
                         <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-10 gap-y-16 pb-24">
-                            {posts.map((post) => (
+                            {posts.length ? 
+                            posts.map((post) => (
                             <ClientSideRoute key={post._id} route={`/post/${post.slug.current}`}>
                                 <div className="flex flex-col group cursor-pointer">
                                     <div className="relative w-full h-80 drop-shadow-xl group-hover:scale-105 transition-transform duration-200 ease-out">
@@ -75,7 +76,10 @@ const BlogList = ({posts}: Props) => {
                                     </p>
                                 </div>
                             </ClientSideRoute>
-                            ))}
+                            ))
+                            :
+                            <p className="mt-5 font-bold flex items-center group-hover:underline text-[25px]"> Coming soon... </p>
+                            }
                         </div>
                     </div>
                 </div>
